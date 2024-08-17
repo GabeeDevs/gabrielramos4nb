@@ -16,15 +16,15 @@
 
 ## Introdução
 
-Esta documentação fornece uma visão geral do [Nome do Software], incluindo seus requisitos, arquitetura e tecnologias utilizadas.
+Esta documentação fornece uma visão geral do WishRun, incluindo seus requisitos, arquitetura e tecnologias utilizadas.
 
 ## Objetivo
 
-Descrever o propósito e os objetivos principais do software. Explicar o problema que o software visa resolver e os benefícios esperados.
+WishRun é um Software no qual busca o resquisito de um jogo e apartir desses requisitos puxara informações para você saber se a pessoa de computador no qual você está querendo adquirir é apta para um configuração recomendada ou minima no jogo selecionado
 
 ## Escopo
 
-Definir os limites do projeto, o que está incluído e o que está fora do escopo. Descrever as principais funcionalidades e o público-alvo.
+O principal funcionalidade do WishRun é facilitar no processo de seleção de um hardware novo no seu computador, auxiliando nos resquisitos do jogo que você tanto sonha jogar até os mais pesados. O WishRun terá como publico alvo aquele usuario que não tem certeza se X hardware suportará o jogo que ele tanto sonho, auxiliando na melhor escolha e custo benefico
 
 ## Requisitos Funcionais
 
@@ -83,14 +83,6 @@ Descrever a estratégia de testes, tipos de testes realizados e resultados esper
 
 - **Plano de Testes:** [Link para o plano ou descrição]
 
-## Referências
-
-Incluir quaisquer referências adicionais, como documentação externa, normas e padrões aplicáveis.
-
-- [Referência 1]
-- [Referência 2]
-
----
 
 **Data de Atualização:** [Data]  
 **Autor:** [Gabriel Ramos]
