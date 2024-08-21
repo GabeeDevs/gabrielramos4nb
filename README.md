@@ -1,4 +1,4 @@
-# Documentação do Software WishRun
+# Documentação do Software Wishrun
 
 ## Índice
 
