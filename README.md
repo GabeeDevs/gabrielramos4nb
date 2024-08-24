@@ -30,23 +30,18 @@ O principal funcionalidade do WishRun é facilitar no processo de seleção de u
 
 Os requisitos funcionais definem o comportamento específico do software e o que ele deve realizar. Abaixo estão os requisitos identificados:
 
-1. **[Requisito 1]**
-   - **Descrição:** [Descrição detalhada do requisito]
-   - **Critérios de Aceitação:** [Critérios que determinam se o requisito foi atendido]
+1. **[Botão de incluir, alterar ou excluir uma configuração selecionada]**
+   - **Descrição:** [A Partir de um banco de dados o usuario vai conseguir puxar configurações de um computador para rodar o jogo escolhido]
+   - **Critérios de Aceitação:** [A Configuração do computador estará incluida]
 
-2. **[Requisito 2]**
-   - **Descrição:** [Descrição detalhada do requisito]
-   - **Critérios de Aceitação:** [Critérios que determinam se o requisito foi atendido]
-
-[Continue listando os requisitos funcionais conforme necessário.]
 
 ## Requisitos Não Funcionais
 
 Os requisitos não funcionais definem as qualidades do software e suas restrições. Incluem aspectos como desempenho, usabilidade e segurança. Abaixo estão os requisitos identificados:
 
-1. **[Requisito Não Funcional 1]**
-   - **Descrição:** [Descrição detalhada do requisito]
-   - **Critérios de Aceitação:** [Critérios que determinam se o requisito foi atendido]
+1. **[Armazenamento de banco de Dados HTTPS]**
+   - **Descrição:** [Toda informação do usuario será guardada e mantida criptografada para não ocorrer riscos]
+   - **Critérios de Aceitação:** [Usuario mantido em segurança com suas informações]
 
 2. **[Requisito Não Funcional 2]**
    - **Descrição:** [Descrição detalhada do requisito]
