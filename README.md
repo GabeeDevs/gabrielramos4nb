@@ -1,83 +1,90 @@
-# Documentação do Software Wishrun
+# Documentação do Software WishRun
+
+## Analise de Hardware e Software
+
+**Nome do Projeto**: WishRun 
+
+**Versão**: 1.0.0
+
+**Data**: 26/08/2024
+
+**Autor(es)**: Gabriel Costa Ramos       **RA:** 62778   **Turma:** ADC 4NB
+
+**Descrição**: O WishRun é um site que consiste em reconhecer programas ou até mesmo hardwares que possam ser compatíveis com o computador do usuário. Ele possui um banco de dados para administrar informações sobre jogos e outros softwares. O site tem uma aba para verificar a compatibilidade do PC do usuario e verifica se é compativel com a peça selecionada ou jogo desejado, caso não seja compatível, ele sugere peças para deixar o PC compatível com o software desejado.
+
+---
 
 ## Índice
 
 1. [Introdução](#introdução)
-2. [Objetivo](#objetivo)
-3. [Escopo](#escopo)
-4. [Requisitos Funcionais](#requisitos-funcionais)
-5. [Requisitos Não Funcionais](#requisitos-não-funcionais)
-6. [Arquitetura do Sistema](#arquitetura-do-sistema)
-7. [Tecnologias Utilizadas](#tecnologias-utilizadas)
-8. [Testes](#testes)
-9. [Referências](#referências)
+2. [Objetivos](#objetivos)
+3. [Requisitos Funcionais](#requisitos-funcionais)
+4. [Requisitos Não Funcionais](#requisitos-não-funcionais)
+5. [Regras de Negócio](#regras-de-negócio)
+6. [Requisitos de Usuário](#requisitos-de-usuário)
+7. [Requisitos de Sistema](#requisitos-de-sistema)
+8. [Tecnologias Utilizadas](#tecnologias-utilizadas)
+10. [Uso](#uso)
+13. [Contato](#contato)
 
 ---
 
 ## Introdução
 
-Esta documentação fornece uma visão geral do WishRun, incluindo seus requisitos, arquitetura e tecnologias utilizadas.
+O WishRun surge da necessidade de ajudar os usuários a encontrar jogos e softwares compatíveis com seus computadores, evitando frustrações e gastos desnecessários com upgrades. Com um banco de dados abrangente e uma interface intuitiva, o programa facilitará a vida dos usuários na busca por compatibilidade.
 
-## Objetivo
+## Objetivos
 
-WishRun é um Software no qual busca o resquisito de um jogo e apartir desses requisitos puxara informações para você saber se a pessoa de computador no qual você está querendo adquirir é apta para um configuração recomendada ou minima no jogo selecionado
-
-## Escopo
-
-O principal funcionalidade do WishRun é facilitar no processo de seleção de um hardware novo no seu computador, auxiliando nos resquisitos do jogo que você tanto sonha jogar até os mais pesados. O WishRun terá como publico alvo aquele usuario que não tem certeza se X hardware suportará o jogo que ele tanto sonho, auxiliando na melhor escolha e custo benefico
+- Criar um banco de dados com informações detalhadas sobre jogos e softwares, incluindo requisitos de hardware.
+- Desenvolver um sistema de verificação de compatibilidade rápido e preciso.
+- Oferecer sugestões de peças para upgrades, caso o PC não atenda aos requisitos mínimos.
+- Fornecer uma experiência agradável e útil aos usuários.
 
 ## Requisitos Funcionais
 
-Os requisitos funcionais definem o comportamento específico do software e o que ele deve realizar. Abaixo estão os requisitos identificados:
-
-1. **[Botão de incluir, alterar ou excluir uma configuração selecionada]**
-   - **Descrição:** [A Partir de um banco de dados o usuario vai conseguir puxar configurações de um computador para rodar o jogo escolhido]
-   - **Critérios de Aceitação:** [A Configuração do computador estará incluida]
-
+1. **Cadastro de Jogos e Softwares**: O sistema deve permitir o cadastro de jogos e softwares, incluindo informações como nome, versão, requisitos mínimos de hardware e data de lançamento.
+2. **Verificação de Compatibilidade**: O sistema deve permitir que o usuário informe as espeicficações do seu computador e receba um resultado sobre a compatibilidade com os jogos e softwares cadastrados.
+3. **Sugestão de Upgrades**: Caso o computador do usuário não atenda aos requisitos mínimos de um jogo ou software, o sistema deve sugerir peças para upgrades, como processador, memória RAM, placa de vídeo e disco rígido.
+4. **Pesquisa e Filtros**: O sistema deve permitir que os usuários pesquisem por jogos e softwares específicos, além de filtrar os resultados por requisitos de hardware, data de lançamento e compatibilidade.
+5. **Notificações de Lançamentos e Atualizações**: O sistema deve enviar notificações aos usuários sobre novos lançamentos de jogos e softwares, bem como atualizações que possam afetar a compatibilidade.
 
 ## Requisitos Não Funcionais
 
-Os requisitos não funcionais definem as qualidades do software e suas restrições. Incluem aspectos como desempenho, usabilidade e segurança. Abaixo estão os requisitos identificados:
+1. **Usabilidade**: A interface do sistema deve ser intuitiva e fácil de usar, permitindo que usuários de todas as idades e níveis de experiência possam navegar e utilizar todas as funcionalidades sem problema algum.
+2. **Escalabilidade**: O sistema deve ser escalável para suportar um grande número de jogos, softwares e usuários cadastrados, sem perda de desempenho.
+3. **Disponibilidade**: O sistema deve estar disponível 99,9% do tempo, garantindo que os usuários possam acessá-lo sempre que necessário.
+4. **Confiabilidade**: O sistema deve garantir que as informações fornecidas sobre compatibilidade e sugestões de upgrades sejam precisas e confiáveis, minimizando erros e inconsistências.
 
-1. **[Armazenamento de banco de Dados HTTPS]**
-   - **Descrição:** [Toda informação do usuario será guardada e mantida criptografada para não ocorrer riscos]
-   - **Critérios de Aceitação:** [Usuario mantido em segurança com suas informações]
+## Regras de Negócio
 
-2. **[Requisito Não Funcional 2]**
-   - **Descrição:** [Descrição detalhada do requisito]
-   - **Critérios de Aceitação:** [Critérios que determinam se o requisito foi atendido]
+1. **RN001**: Apenas usuários cadastrados poderão sugerir novos jogos e softwares para serem adicionados ao banco de dados.
+2. **RN002**: O sistema deve ser capaz de identificar e atualizar automaticamente as informações sobre novos lançamentos e atualizações de jogos e softwares.
 
-[Continue listando os requisitos não funcionais conforme necessário.]
+## Requisitos de Usuário
 
-## Arquitetura do Sistema
+1. **RU001**: O usuário deve ser capaz de criar uma conta e fazer login no sistema.
+2. **RU002**: O usuário deve poder informar as especificações do seu computador, incluindo processador, memória RAM, placa de vídeo e disco rígido.
+3. **RU003**: O usuário deve poder pesquisar por jogos e softwares específicos e filtrar os resultados por requisitos de hardware, data de lançamento e compatibilidade.
+4. **RU004**: O usuário deve poder receber notificações sobre novos lançamentos e atualizações de jogos e softwares.
 
-Descrever a arquitetura geral do sistema, incluindo diagramas, componentes principais e suas interações. Pode incluir:
+## Requisitos de Sistema
 
-- **Diagrama de Arquitetura:** [Link para o diagrama ou descrição]
-- **Componentes Principais:**
-  - **[Componente 1]:** [Descrição]
-  - **[Componente 2]:** [Descrição]
+1. **RS001**: O sistema deve utilizar um banco de dados relacional para armazenar informações sobre jogos, softwares e usuários.
+2. **RS002**: O sistema deve ser compatível com os principais navegadores web e dispositivos móveis.
+3. **RS003**: O sistema deve ter um mecanismo de busca eficiente para permitir pesquisas rápidas e precisas.
+4. **RS004**: O sistema deve ter um sistema de notificações eficaz para enviar atualizações aos usuários.
 
 ## Tecnologias Utilizadas
 
-Listar as tecnologias e ferramentas utilizadas no desenvolvimento do software, incluindo:
-
-- **Linguagens de Programação:** [Listar linguagens]
-- **Frameworks e Bibliotecas:** [Listar frameworks e bibliotecas]
-- **Banco de Dados:** [Descrever banco de dados]
-- **Outras Tecnologias:** [Listar outras tecnologias]
-
-## Testes
-
-Descrever a estratégia de testes, tipos de testes realizados e resultados esperados. Pode incluir:
-
-- **Tipos de Testes:**
-  - **Testes Unitários:** [Descrição]
-  - **Testes de Integração:** [Descrição]
-  - **Testes de Aceitação:** [Descrição]
-
-- **Plano de Testes:** [Link para o plano ou descrição]
+- Linguagem de Programação: JavaScript
+- Banco de Dados: MySQL
+- Biblioteca de Visualização: D3.js
 
 
-**Data de Atualização:** [Data]  
-**Autor:** [Gabriel Ramos]
+## Uso
+
+1. Acesse o site do WishRun em seu navegador.
+2. Informe as especificações do seu computador.
+3. Pesquise por jogos e softwares ou use os filtros para encontrar o que você precisa.
+4. Verifique a compatibilidade e, se necessário, receba sugestões de upgrades.
+5. Caso deseje realizar Review o usuario terá que se cadastrar no site
